@@ -67,7 +67,7 @@ const Wrapper = styled.section`
   h4,
   p {
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 150px auto;
     color: #00473e;
   }
   h4 {

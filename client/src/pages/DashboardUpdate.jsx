@@ -14,8 +14,6 @@ const DashboardUpdate = () => {
     singleProduct,
     getSingleProduct,
     updateProduct,
-    alertTypeProduct,
-    alertTextProduct,
     showAlertProduct,
   } = useContextProducts();
   const { productId } = useParams();
@@ -24,29 +22,6 @@ const DashboardUpdate = () => {
   useEffect(() => {
     getSingleProduct(`/api/v1/products/${productId}`);
   }, [productId]);
-  useEffect(() => {
-    if (error) {
-      setTimeout(() => {
-        navigate('/');
-      }, 2000);
-    }
-  }, [error]);
-
-  const {
-    _id,
-    name,
-    price,
-    description,
-    image,
-    company,
-    colors,
-    featured,
-    freeShipping,
-    inventory,
-    category,
-    averageRating,
-    numberOfReviews,
-  } = singleProduct;
 
   const initialState = {
     name: singleProduct.name,
@@ -63,9 +38,30 @@ const DashboardUpdate = () => {
     numberOfReviews: singleProduct.numberOfReviews,
     averageRating: singleProduct.averageRating,
   };
+  useEffect(() => {
+    if (error) {
+      setTimeout(() => {
+        navigate('/');
+      }, 2000);
+    }
+  }, [error]);
+
   const [values, setValues] = useState(initialState);
   const colorsArr = ['#7cbc14', '#b02cc5', '#ebca2a', '#12b4cd ', '#e12241'];
-
+  const {
+    name,
+    price,
+    description,
+    image,
+    company,
+    colors,
+    featured,
+    freeShipping,
+    inventory,
+    category,
+    numberOfReviews,
+    averageRating,
+  } = values;
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
@@ -112,20 +108,6 @@ const DashboardUpdate = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const {
-      name,
-      price,
-      description,
-      image,
-      company,
-      colors,
-      featured,
-      freeShipping,
-      inventory,
-      category,
-      numberOfReviews,
-      averageRating,
-    } = values;
 
     const currentProduct = {
       name,

@@ -49,12 +49,12 @@ const Wrapper = styled.section`
     justify-content: space-between;
   }
   .singleBtn {
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0.5rem;
     border: none;
     background: #faae2b;
-    width: 12rem;
+    width: 10rem;
     border-radius: var(--radius);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #00473e;
     text-transform: uppercase;
     transition: var(--transition);
