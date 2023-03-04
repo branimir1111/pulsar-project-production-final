@@ -95,7 +95,7 @@ const Wrapper = styled.section`
   justify-content: center;
   background: #f4d0d6;
   .container {
-    width: 400px;
+    width: 350px;
     background: #094067;
     padding: 1rem;
     border-radius: var(--radius);

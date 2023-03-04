@@ -324,7 +324,7 @@ const Wrapper = styled.section`
   padding: 1rem 0;
   .formCreate {
     background: #cabae8;
-    width: 400px;
+    width: 350px;
     padding: 1rem;
     border-radius: var(--radius);
   }

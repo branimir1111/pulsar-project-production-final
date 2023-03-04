@@ -43,7 +43,7 @@ const Wrapper = styled.main`
   }
   .totalAmount {
     background: #fffffe;
-    width: 450px;
+    width: 350px;
     padding: 1rem;
     border-radius: var(--radius);
     h4,

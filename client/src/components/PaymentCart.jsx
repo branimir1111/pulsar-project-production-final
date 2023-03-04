@@ -63,6 +63,7 @@ const Wrapper = styled.div`
   border-radius: var(--radius);
   .form {
     padding: 1rem;
+    width: 350px;
   }
   .labelText {
     display: block;
