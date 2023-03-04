@@ -159,7 +159,7 @@ const Wrapper = styled.section`
     border-radius: var(--radius);
     border-top: 5px solid #9e74e8;
     border-bottom: 5px solid #9e74e8;
-    width: 400px;
+    width: 350px;
     background: #fffffe;
   }
   .formLabel {
@@ -173,7 +173,7 @@ const Wrapper = styled.section`
     border-radius: var(--radius);
   }
   .userAdminBtnContainer {
-    width: 400px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
   }
